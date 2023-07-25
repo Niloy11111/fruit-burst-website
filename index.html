@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>  
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/485223d2ff.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
 </head>
 <body>
+    <header class="container mx-auto mt-12">
+   <nav class="flex items-center justify-between py-8 px-14 bg-[#F85559] rounded-full">
+    <div>
     
+      <ul class="flex space-x-8 text-[#FFF] font-lato font-normal text-lg">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Shop</li>
+        <li>All Fruits</li>
+      </ul>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <img src="./images/logo.png" alt="">
+      <h3 class="text-4xl text-[#FFF] font-bold font-lato">Fruit Burst</h3>
+    </div>
+
+
+    <div class="flex items-center bg-[#FFF] rounded-full w-[400px] py-4
+    px-2">
+
+      <input type="text" placeholder="Type here" class="input-bordered w-full max-w-xs outline-none ml-6"/>
+       <button class="ml-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+       </button>
+      
+      
+        
+    </div>
+   </nav>
+
+   <section class="mt-14">
+    <div class="carousel w-full">
+
+      <div id="slide1" class="carousel-item relative w-full h-[600px] bg-no-repeat bg-cover" style="background-image: url(./images/banner1.png);">
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+
+      <div id="slide2" class="carousel-item relative w-full h-[600px] bg-no-repeat bg-cover" style="background-image: url(./images/banner2.png);">
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+
+      <div id="slide3" class="carousel-item relative w-full h-[600px] bg-no-repeat bg-cover" style="background-image: url(./images/banner3.png);">
+       <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+
+      <div id="slide4" class="carousel-item relative w-full h-[600px] bg-no-repeat bg-cover" style="background-image: url(./images/banner4.png);">
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+    </div>
+   </section>
+    </header>
+
+
+
+    <main>
+    </main>
+
+
+
+
 </body>
 </html>
