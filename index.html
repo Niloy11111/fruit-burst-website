@@ -16,6 +16,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'black-primary':'#121212',
+            'little-red':'#F85559',
+            'white-primary':'#FFF',
           }
         }
       }
@@ -130,6 +133,7 @@
     </header>
 
     <main class="container mx-auto bg-[#FFF]">
+      <!-- Deal the day content section start here -->
       <section>
         <div class="flex justify-between items-center">
           <div>
@@ -139,36 +143,247 @@
 
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
-              <span class="countdown text-center text-4xl font-extrabold font-lato text-[#121212]">
-                <span class="mb-2 mr-4" style="--value:29;"></span> :
+              <span class="countdown text-center text-5xl font-extrabold font-lato text-[#121212]">
+                <span class="mb-2 mr-5" style="--value:29;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </span>
-              <p class="mr-3">Days</p>
+              <p class="mr-11 mt-2">Days</p>
             </div> 
             <div class="flex flex-col">
-              <span class="countdown text-center text-4xl font-extrabold font-lato text-[#121212]">
-                <span class="mb-2 mr-6" style="--value:15;"></span> :
+              <span class="countdown text-center text-5xl font-extrabold font-lato text-[#121212]">
+                <span class="mb-2 mr-6" style="--value:15;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </span>
-             <p class="mr-3"> Hours</p>
+             <p class="mr-11 mt-2"> Hours</p>
             </div> 
             <div class="flex flex-col">
-              <span class="countdown text-center text-4xl font-extrabold font-lato text-[#121212]">
-                <span class="mb-2 mr-6" style="--value:25;"></span> :
+              <span class="countdown text-center text-5xl font-extrabold font-lato text-[#121212]">
+                <span class="mb-2 mr-6" style="--value:25;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
               </span>
-             <p class="mr-3"> Minutes</p>
+             <p class="mr-11 mt-2"> Minutes</p>
             </div> 
             <div class="flex flex-col">
-              <span class="countdown text-center text-4xl font-extrabold font-lato text-[#121212]">
-                <span class="mb-2 mr-6" style="--value:08;"></span> :
+              <span class="countdown text-center text-5xl font-extrabold font-lato text-[#121212]">
+                <span class="mb-2 mr-6" style="--value:08;"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </span>
-            <p class="mr-3">Seconds</p>
+            <p class="mr-11 mt-2">Seconds</p>
             </div>
           </div>
         </div>
       </section>
-<!-- Deal of the day section start here -->
-      <section class="mt-12">
+<!-- Deal of the day rating section start here -->
 
+      <section class="mt-12">
+        <div class="grid grid-cols-4 gap-6">
+
+<!-- first- card -->
+          <div class="card border border-[#1212121A] rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="mb-10" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-center text-2xl text-black-primary font-bold font-lato border-b px-8 pb-6 border-[#1212121A]">12.90$ - 18.85$</h2>   
+              <p class="text-[#12121299] font-medium font-lato mt-6">Apples</p>
+              <div class="rating mt-6">
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#F85559]"  />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+<button class="text-[#F85559] font-lato text-lg font-bold mt-7" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class="modal-box">
+   
+      <div class="py-8 px-12">
+
+        <img class="mx-auto w-[180px]" src="./images/fruit6.png" alt="">
+      <h3 class="text-black-primary text-4xl font-lato font-extrabold mt-5">Apples</h3>
+      <p class="text-blac-primary font-lato font-medium mt-6">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      <div class="rating mt-5">
+        <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-1" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+      </div>
+      
+     <div class="mt-6">
+      <button class="px-7 py-5 text-little-red text-xl font-bold rounded-lg border border-little-red">Close</button>
+      <button class="ml-8 px-7 py-5 text-white-primary text-xl font-bold rounded-lg bg-little-red">Buy Now</button>
+     </div>
+         </div>
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>       
+            </div>
+          </div>
+
+<!-- second - card -->
+          <div class="card border border-[#1212121A] rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit7.png" alt="Shoes" class="mb-10" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-center text-2xl text-black-primary font-bold font-lato border-b px-8 pb-6 border-[#1212121A]">12.90$ - 18.85$</h2>   
+              <p class="text-[#12121299] font-medium font-lato mt-6">Orange</p>
+              <div class="rating mt-6">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+<button class="text-[#F85559] font-lato text-lg font-bold mt-7" onclick="my_modal_3.showModal()">Details</button>
+<dialog id="my_modal_3" class="modal">
+  <form method="dialog" class="modal-box">
+   
+      <div class="py-8 px-12">
+
+        <img class="mx-auto w-[180px]" src="./images/fruit7.png" alt="">
+      <h3 class="text-black-primary text-4xl font-lato font-extrabold mt-5">Orange</h3>
+      <p class="text-blac-primary font-lato font-medium mt-6">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      <div class="rating mt-5">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+      </div>
+      
+     <div class="mt-6">
+      <button class="px-7 py-5 text-little-red text-xl font-bold rounded-lg border border-little-red">Close</button>
+      <button class="ml-8 px-7 py-5 text-white-primary text-xl font-bold rounded-lg bg-little-red">Buy Now</button>
+     </div>
+         </div>
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>       
+            </div>
+          </div>
+<!-- third- card -->
+          <div class="card border border-[#1212121A] rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="Shoes" class="mb-10" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-center text-2xl text-black-primary font-bold font-lato border-b px-8 pb-6 border-[#1212121A]">12.90$ - 18.85$</h2>   
+              <p class="text-[#12121299] font-medium font-lato mt-6">Red Dragon</p>
+              <div class="rating mt-6">
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]"  />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+<button class="text-[#F85559] font-lato text-lg font-bold mt-7" onclick="my_modal_4.showModal()">Details</button>
+<dialog id="my_modal_4" class="modal">
+  <form method="dialog" class="modal-box">
+   
+      <div class="py-8 px-12">
+
+        <img class="mx-auto w-[180px]" src="./images/fruit8.png" alt="">
+      <h3 class="text-black-primary text-4xl font-lato font-extrabold mt-5">Red Dragon</h3>
+      <p class="text-blac-primary font-lato font-medium mt-6">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      <div class="rating mt-5">
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+      </div>
+      
+     <div class="mt-6">
+      <button class="px-7 py-5 text-little-red text-xl font-bold rounded-lg border border-little-red">Close</button>
+      <button class="ml-8 px-7 py-5 text-white-primary text-xl font-bold rounded-lg bg-little-red">Buy Now</button>
+     </div>
+         </div>
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>       
+            </div>
+          </div>
+<!-- fourth- card -->
+          <div class="card border border-[#1212121A] rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit9.png" alt="Shoes" class="mb-10" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-center text-2xl text-black-primary font-bold font-lato border-b px-8 pb-6 border-[#1212121A]">12.90$ - 18.85$</h2>   
+              <p class="text-[#12121299] font-medium font-lato mt-6">Banana</p>
+              <div class="rating mt-6">
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]"  />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" />
+                <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+              </div>
+
+              <!-- Open the modal using ID.showModal() method -->
+<button class="text-[#F85559] font-lato text-lg font-bold mt-7" onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal">
+  <form method="dialog" class="modal-box">
+   
+      <div class="py-8 px-12">
+
+        <img class="mx-auto w-[180px]" src="./images/fruit9.png" alt="">
+      <h3 class="text-black-primary text-4xl font-lato font-extrabold mt-5">Banana</h3>
+      <p class="text-blac-primary font-lato font-medium mt-6">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+      <div class="rating mt-5">
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#FBC0A8]" checked/>
+      </div>
+      
+     <div class="mt-6">
+      <button class="px-7 py-5 text-little-red text-xl font-bold rounded-lg border border-little-red">Close</button>
+      <button class="ml-8 px-7 py-5 text-white-primary text-xl font-bold rounded-lg bg-little-red">Buy Now</button>
+     </div>
+         </div>
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>       
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center mt-12">
+          <button class="text-xl font-bold text-white-primary px-7 py-5 bg-little-red rounded-lg">Shop All</button>
+        </div>
       </section>
+
+      <section class="mt-36">
+        
+      </section>
+
     </main>
 
 
